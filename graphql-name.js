@@ -57,7 +57,7 @@ var schema = new GraphQLSchema({
                 return resolve([name]);
               })
               .catch(err => {
-                console.log(err);
+                console.error(err);
                 return reject(err);
               });
           });
